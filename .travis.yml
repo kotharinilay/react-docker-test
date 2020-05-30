@@ -7,4 +7,4 @@ before_install:
     - docker build -t kotharinilay/react-docker-test -f Dockerfile.dev .
 
 script:
-    - docker run kotharinilay/react-docker-test npm run test -- --coverage
+    - docker run kotharinilay/react-docker-test CI=true npm test -- --coverage
